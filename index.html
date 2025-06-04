@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameUp - فروش آیتم بازی</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      color: gold;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .filters, .items {
+      padding: 1rem;
+    }
+    .filter-box, .item-card {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    .item-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .btn {
+      background-color: gold;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+    .whatsapp img {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">GameUp</div>
+    <nav>
+      <a href="#">خانه</a>
+      <a href="#items">آیتم‌ها</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+  </header>
+
+  <section class="filters">
+    <div class="filter-box">
+      <label>جستجو:</label>
+      <input type="text" placeholder="نام آیتم..." style="width: 100%; padding: 0.5rem; border-radius: 5px;">
+    </div>
+    <div class="filter-box">
+      <label>دسته‌بندی:</label>
+      <select style="width: 100%; padding: 0.5rem; border-radius: 5px;">
+        <option>همه</option>
+        <option>کلش آف کلنز</option>
+        <option>فورتنایت</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="items" id="items">
+    <div class="item-card">
+      <img src="images/gem.jpg" alt="آیتم 1">
+      <h3>جم کلش 1200 تایی</h3>
+      <p>قیمت: ۸۰٬۰۰۰ تومان</p>
+      <button class="btn">سفارش از واتساپ</button>
+    </div>
+    <div class="item-card">
+      <img src="images/skin.jpg" alt="آیتم 2">
+      <h3>اسکین فورتنایت</h3>
+      <p>قیمت: ۵۰٬۰۰۰ تومان</p>
+      <button class="btn">سفارش از واتساپ</button>
+    </div>
+  </section>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/989123456789" target="_blank">
+      <img src="images/whatsapp.svg" alt="واتساپ">
+    </a>
+  </div>
+</body>
+</html>
